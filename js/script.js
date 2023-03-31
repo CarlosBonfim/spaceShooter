@@ -57,13 +57,13 @@ function createLaserElement(){
     return newLaser;
 }
 
-function moveLaser(laser){
+function moveLaser(laser) {
     let laserInterval = setInterval(() => {
-        let xPosition = parseInt(laser.style.left)
-        if(xPosition === 340){
-            laser.remove()
-        }else{
-            laser.style.left = `${xPosition + 8}px`
+        let xPosition = parseInt(laser.style.left);
+        if (xPosition === 340) {
+            laser.remove();
+        } else {
+            laser.style.left = `${xPosition + 8}px`;
         }
     }, 10);
 }
