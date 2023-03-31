@@ -15,6 +15,19 @@ body{
     height: 600px;
     width: 600px;
 }
+.game-instructions{
+    position: relative;
+    color: white;
+    left: 7em;
+    top: 0px;
+}
+.start-button{
+    position: relative;
+    color: white;
+    top: 9em;
+    left: 15em;
+    cursor: pointer;
+}
 .player-shooter{
     position: relative;
     height: 60px;
@@ -26,4 +39,19 @@ body{
     position: relative;
     width: 40px;
     height: 30px;
+}
+.alien{
+    height: 60px;
+    width: 70px;
+    position: relative;
+}
+.alien-transition{
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+.dead-alien{
+    height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
 }
