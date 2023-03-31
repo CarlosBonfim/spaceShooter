@@ -25,3 +25,17 @@ function moveUp() {
         yourShip.style.top = `${position}px`;
     }
 }
+
+//funcao de descer
+function moveDown() {
+    let topPosition = getComputedStyle(yourShip).getPropertyValue("top");
+    if (topPosition === "510px") {
+        return;
+    } else {
+        let position = parseInt(topPosition);
+        position += 50;
+        yourShip.style.top = `${position}px`;
+    }
+}
+
+window.addEventListener('keydown', flyShip)
